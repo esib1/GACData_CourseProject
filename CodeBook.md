@@ -53,10 +53,10 @@ Primary source for description: http://archive.ics.uci.edu/ml/datasets/Human+Act
 
 ##Script implementation:
 
-Uses the reshape and data.table libraries
-Loads test and train data
-Loads features and activity labels
-Extract the mean and std dev column headers and data
-Process test data
-Process training data
-Merge data set and outputs as "tidy_data_esib1.txt"
+1. Uses the reshape and data.table libraries
+2. Loads test and train data
+3. Loads features and activity labels
+4. Extract the mean and std dev column headers and data
+5. Process test data
+6. Process training data
+7. Merge data set and outputs as "tidy_data_esib1.txt"
