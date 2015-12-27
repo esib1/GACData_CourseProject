@@ -21,13 +21,13 @@ Primary source for description: http://archive.ics.uci.edu/ml/datasets/Human+Act
 
 'README.txt'
 
-#Test
+###Test
 
 'test/X_test.txt': Test set
 
 'test/y_test.txt': Test labels
 
-#Training
+###Training
 
 'train/X_train.txt': Training set
 
