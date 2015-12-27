@@ -8,4 +8,4 @@ This repository is for the Coursera: Getting and Cleaning Data Course Project.
 4. This should output the tidy_data_esib1.txt in your working directory
 
 ##Dependencies
-run_analysis.R is dependent on data.table and reshape2, but will install these when you run the script if they are not currently installed. 
+run_analysis.R is dependent on data.table and reshape2, but will install these when you run the script if they are not currently installed.
