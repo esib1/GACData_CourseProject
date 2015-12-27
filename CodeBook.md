@@ -13,7 +13,7 @@ Num of Attributes: 561
 Primary source for description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ##Description of Data Set Files
-'activity_labels.txt': Ties the class labels with their respective activity name.
+'activity_labels.txt': Ties the class labels with their respective activity name
 
 'features_info.txt': Details about the variables on the feature vector
 
@@ -35,10 +35,28 @@ Primary source for description: http://archive.ics.uci.edu/ml/datasets/Human+Act
 
 ####Test/Train Intertial Data
 
-'[test/train]/subject_[test/train].txt': One row per subject who performed activity for each window. Its range is from 1 to 30.
+'[test/train]/subject_[test/train].txt': One row per subject who performed activity for each window. Its range is from 1 to 30
 
-'[test/train]/Inertial Signals/total_acc_[x/y/z]_[test/train].txt': Acceleration signal from the smartphone's accelerometer z/y/z axis (standard gravity units 'g'). Every row is a vector of 128 elements.
+'[test/train]/Inertial Signals/total_acc_[x/y/z]_[test/train].txt': Acceleration signal from the smartphone's accelerometer z/y/z axis (standard gravity units 'g'). Every row is a vector of 128 elements
 
-'[test/train]/Inertial Signals/body_acc_[x/y/z]_[test/train].txt': Body acceleration signal obtained by subtracting the gravity from the total acceleration.
+'[test/train]/Inertial Signals/body_acc_[x/y/z]_[test/train].txt': Body acceleration signal obtained by subtracting the gravity from the total acceleration
 
-'[test/train]/Inertial Signals/body_gyro_[x/y/z]_[test/train].txt': The angular velocity vector measured by the gyroscope for each window sample (in radians/second).
+'[test/train]/Inertial Signals/body_gyro_[x/y/z]_[test/train].txt': The angular velocity vector measured by the gyroscope for each window sample (in radians/second)
+
+##Transformation details
+
+1. Merges the training and the test sets to create one data set
+2. Extracts only the measurements on the mean and standard deviation for each measurement
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+##Script implementation:
+
+Uses the reshape and data.table libraries
+Loads test and train data
+Loads features and activity labels
+Extract the mean and std dev column headers and data
+Process test data
+Process training data
+Merge data set and outputs as "tidy_data_esib1.txt"
