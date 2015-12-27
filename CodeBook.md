@@ -21,19 +21,19 @@ Primary source for description: http://archive.ics.uci.edu/ml/datasets/Human+Act
 
 'README.txt'
 
-###Test
+####Test
 
 'test/X_test.txt': Test set
 
 'test/y_test.txt': Test labels
 
-###Training
+####Training
 
 'train/X_train.txt': Training set
 
 'train/y_train.txt': Training labels
 
-#Test/Train Intertial Data
+####Test/Train Intertial Data
 
 '[test/train]/subject_[test/train].txt': One row per subject who performed activity for each window. Its range is from 1 to 30.
 
